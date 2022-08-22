@@ -20,7 +20,7 @@ main()
 		sum=0;
 		for(j=0;j<c;j++)
 		{
-			sum=sum+a[j][i];
+			sum=sum+a[i][j];
 		}
 		printf("%d row sum=%d\n",i+1,sum);
 	}
