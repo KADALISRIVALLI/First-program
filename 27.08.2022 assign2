@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+char s[]="abc";
+
+int n=sizeof(s)/sizeof( s[0])-1;
+
+printf("%d ",n);
+
+int l,i,j,k;
+
+for(l=1;l<=n;l++)// length of substring.
+
+{
+
+for(i=0;i<=n-l;i++)// starting index
+
+{
+
+j=i+l-1;//ending index.
+
+for(k=i;k<=j;k++)
+
+{
+
+printf("%c",s[k]);
+
+}
+
+}
+
+}
+
+return 0;
+
+}
